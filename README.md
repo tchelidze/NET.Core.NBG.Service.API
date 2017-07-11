@@ -25,3 +25,7 @@ var getCurrencyResponse = await nbpClient.GetCurrencyAsync(new GetCurrency.Reque
 ```
 
 See usage of all client's method [here](https://github.com/tchelidze/NET.Core.NBG.Service.API/blob/master/NET.Core.NBG.Service.API.Example/Program.cs)
+
+## License
+
+This project is licensed under the [MIT license](https://github.com/dotnet/orleans/blob/master/LICENSE)
