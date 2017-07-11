@@ -1,0 +1,7 @@
+C:\Users\User\Documents\Visual Studio 2017\Projects\NET.Core.NBG.Service.API\NET.Core.NBG.Service.API.Client\bin\Debug\netcoreapp1.1\NET.Core.NBG.Service.API.Client.deps.json
+C:\Users\User\Documents\Visual Studio 2017\Projects\NET.Core.NBG.Service.API\NET.Core.NBG.Service.API.Client\bin\Debug\netcoreapp1.1\NET.Core.NBG.Service.API.Client.dll
+C:\Users\User\Documents\Visual Studio 2017\Projects\NET.Core.NBG.Service.API\NET.Core.NBG.Service.API.Client\bin\Debug\netcoreapp1.1\NET.Core.NBG.Service.API.Client.pdb
+C:\Users\User\Documents\Visual Studio 2017\Projects\NET.Core.NBG.Service.API\NET.Core.NBG.Service.API.Client\obj\Debug\netcoreapp1.1\NET.Core.NBG.Service.API.Client.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2017\Projects\NET.Core.NBG.Service.API\NET.Core.NBG.Service.API.Client\obj\Debug\netcoreapp1.1\NET.Core.NBG.Service.API.Client.AssemblyInfo.cs
+C:\Users\User\Documents\Visual Studio 2017\Projects\NET.Core.NBG.Service.API\NET.Core.NBG.Service.API.Client\obj\Debug\netcoreapp1.1\NET.Core.NBG.Service.API.Client.dll
+C:\Users\User\Documents\Visual Studio 2017\Projects\NET.Core.NBG.Service.API\NET.Core.NBG.Service.API.Client\obj\Debug\netcoreapp1.1\NET.Core.NBG.Service.API.Client.pdb
