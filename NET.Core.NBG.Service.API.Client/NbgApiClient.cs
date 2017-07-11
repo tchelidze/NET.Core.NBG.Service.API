@@ -40,7 +40,7 @@ namespace NET.Core.NBG.Service.API.Client
         /// <returns></returns>
         public async Task<Operations.GetCurrency.Response> GetCurrencyAsync(Operations.GetCurrency.Request request)
         {
-            var response = await InvokeBngApi(new ApiModel.GetCurrencyRequest { Code = request.Code }, "GetCurrency");
+            var response = await InvokeBngApi(new ApiModel.GetCurrencyRequest { Code = request.Code.ToString() }, "GetCurrency");
             var body = response.Body<ApiModel.GetCurrencyResponse>();
             return new GetCurrency.Response { Rate = decimal.Parse(body.Return) };
         }
@@ -52,7 +52,7 @@ namespace NET.Core.NBG.Service.API.Client
         /// <returns></returns>
         public async Task<Operations.GetCurrencyDescription.Response> GetCurrencyDescriptionAsync(Operations.GetCurrencyDescription.Request request)
         {
-            var response = await InvokeBngApi(new ApiModel.GetCurrencyDescriptionRequest { Code = request.Code }, "GetCurrencyDescription");
+            var response = await InvokeBngApi(new ApiModel.GetCurrencyDescriptionRequest { Code = request.Code.ToString() }, "GetCurrencyDescription");
             var body = response.Body<ApiModel.GetCurrencyDescriptionResponse>();
             return new GetCurrencyDescription.Response { Description = body.Return };
         }
@@ -64,7 +64,7 @@ namespace NET.Core.NBG.Service.API.Client
         /// <returns></returns>
         public async Task<Operations.GetCurrencyChange.Response> GetCurrencyChangeAsync(Operations.GetCurrencyChange.Request request)
         {
-            var response = await InvokeBngApi(new ApiModel.GetCurrencyChangeRequest { Code = request.Code }, "GetCurrencyChange");
+            var response = await InvokeBngApi(new ApiModel.GetCurrencyChangeRequest { Code = request.Code.ToString() }, "GetCurrencyChange");
             var body = response.Body<ApiModel.GetCurrencyChangeResponse>();
             return new GetCurrencyChange.Response { Change = decimal.Parse(body.Return) };
         }
@@ -76,7 +76,7 @@ namespace NET.Core.NBG.Service.API.Client
         /// <returns></returns>
         public async Task<Operations.GetCurrencyRate.Response> GetCurrencyRateAsync(Operations.GetCurrencyRate.Request request)
         {
-            var response = await InvokeBngApi(new ApiModel.GetCurrencyRateRequest { Code = request.Code }, "GetCurrencyRate");
+            var response = await InvokeBngApi(new ApiModel.GetCurrencyRateRequest { Code = request.Code.ToString() }, "GetCurrencyRate");
             var body = response.Body<ApiModel.GetCurrencyRateResponse>();
             return new GetCurrencyRate.Response { Rate = body.Return };
         }

@@ -4,7 +4,7 @@
     {
         public class Request
         {
-            public string Code { get; set; }
+            public CurrencyCode Code { get; set; }
         }
 
         public class Response

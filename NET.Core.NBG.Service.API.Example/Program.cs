@@ -10,16 +10,16 @@ namespace NET.Core.NBG.Service.API.Example
         {
             using (var nbpClient = new NbgApiClient())
             {
-                var getCurrencyResponse = nbpClient.GetCurrencyAsync(new GetCurrency.Request { Code = "USD" }).Result;
+                var getCurrencyResponse = nbpClient.GetCurrencyAsync(new GetCurrency.Request { Code = CurrencyCode.USD }).Result;
                 Console.WriteLine($"GetCurrencyAsync -> Code : USD Result : {getCurrencyResponse.Rate}");
 
-                var getCurrencyDescriptionResponse = nbpClient.GetCurrencyDescriptionAsync(new GetCurrencyDescription.Request { Code = "USD" }).Result;
+                var getCurrencyDescriptionResponse = nbpClient.GetCurrencyDescriptionAsync(new GetCurrencyDescription.Request { Code = CurrencyCode.USD }).Result;
                 Console.WriteLine($"GetCurrencyDescriptionAsync -> Code : USD Result : {getCurrencyDescriptionResponse.Description}");
 
-                var getCurrencyChangeResponse = nbpClient.GetCurrencyChangeAsync(new GetCurrencyChange.Request { Code = "USD" }).Result;
+                var getCurrencyChangeResponse = nbpClient.GetCurrencyChangeAsync(new GetCurrencyChange.Request { Code = CurrencyCode.USD }).Result;
                 Console.WriteLine($"GetCurrencyChangeAsync -> Code : USD Result : {getCurrencyChangeResponse.Change}");
 
-                var getCurrencyRateResponse = nbpClient.GetCurrencyRateAsync(new GetCurrencyRate.Request { Code = "USD" }).Result;
+                var getCurrencyRateResponse = nbpClient.GetCurrencyRateAsync(new GetCurrencyRate.Request { Code = CurrencyCode.USD }).Result;
                 Console.WriteLine($"GetCurrencyRateAsync -> Code : USD Result : {getCurrencyRateResponse.Rate}");
 
                 var getDateResponse = nbpClient.GetDateAsync(new GetDate.Request()).Result;
