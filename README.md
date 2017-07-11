@@ -16,21 +16,21 @@ National Bank of Georgia (NBG) currency service API wrapper for .NET Standart
 
 Create an NbgApiClient, you can surround the code with `using` block.
 
-`using (var nbpClient = new NbgApiClient())
-            {
-                var getCurrencyResponse = nbpClient.GetCurrencyAsync(new GetCurrency.Request { Code = "USD" }).Result;
-                Console.WriteLine($"GetCurrencyAsync -> Code : USD Result : {getCurrencyResponse.Rate}");
+```using (var nbpClient = new NbgApiClient())
+   {
+      var getCurrencyResponse = await  nbpClient.GetCurrencyAsync(new GetCurrency.Request { Code = "USD" });
+      Console.WriteLine($"GetCurrencyAsync -> Code : USD Result : {getCurrencyResponse.Rate}");
 
-                var getCurrencyDescriptionResponse = nbpClient.GetCurrencyDescriptionAsync(new GetCurrencyDescription.Request { Code = "USD" }).Result;
-                Console.WriteLine($"GetCurrencyDescriptionAsync -> Code : USD Result : {getCurrencyDescriptionResponse.Description}");
+      var getCurrencyDescriptionResponse = await  nbpClient.GetCurrencyDescriptionAsync(new GetCurrencyDescription.Request { Code = "USD" });
+      Console.WriteLine($"GetCurrencyDescriptionAsync -> Code : USD Result : {getCurrencyDescriptionResponse.Description}");
 
-                var getCurrencyChangeResponse = nbpClient.GetCurrencyChangeAsync(new GetCurrencyChange.Request { Code = "USD" }).Result;
-                Console.WriteLine($"GetCurrencyChangeAsync -> Code : USD Result : {getCurrencyChangeResponse.Change}");
+      var getCurrencyChangeResponse = await nbpClient.GetCurrencyChangeAsync(new GetCurrencyChange.Request { Code = "USD" });
+      Console.WriteLine($"GetCurrencyChangeAsync -> Code : USD Result : {getCurrencyChangeResponse.Change}");
 
-                var getCurrencyRateResponse = nbpClient.GetCurrencyRateAsync(new GetCurrencyRate.Request { Code = "USD" }).Result;
-                Console.WriteLine($"GetCurrencyRateAsync -> Code : USD Result : {getCurrencyRateResponse.Rate}");
+      var getCurrencyRateResponse = await  nbpClient.GetCurrencyRateAsync(new GetCurrencyRate.Request { Code = "USD" });
+      Console.WriteLine($"GetCurrencyRateAsync -> Code : USD Result : {getCurrencyRateResponse.Rate}");
 
-                var getDateResponse = nbpClient.GetDateAsync(new GetDate.Request()).Result;
-                Console.WriteLine($"GetDateAsync -> Code : USD Result : {getDateResponse.Date}");
-            }`
+      var getDateResponse = await nbpClient.GetDateAsync(new GetDate.Request());
+      Console.WriteLine($"GetDateAsync -> Code : USD Result : {getDateResponse.Date}");
+    }```
  
