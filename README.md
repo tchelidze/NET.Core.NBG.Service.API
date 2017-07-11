@@ -20,6 +20,6 @@ Create an NbgApiClient, you can surround the code with `using` block.
 
 Invoke client's method and pass corresponding request object
 
-`var getCurrencyResponse = nbpClient.GetCurrencyAsync(new GetCurrency.Request { Code = CurrencyCode.USD }).Result;`
+`var getCurrencyResponse = await nbpClient.GetCurrencyAsync(new GetCurrency.Request { Code = CurrencyCode.USD });`
 
 See usage of all client's method [here](https://github.com/tchelidze/NET.Core.NBG.Service.API/blob/master/NET.Core.NBG.Service.API.Example/Program.cs)
