@@ -8,11 +8,11 @@ National Bank of Georgia (NBG) currency service API wrapper for .NET Standart
 ## Usage
 
 * supported operations
-1. `GetCurrencyAsync` - აბრუნებს ვალუტის კურსს, მაგ. "1.0754"
-2. `GetCurrencyDescriptionAsync` - აბრუნებს ვალუტის აღწერას, მაგ. "10 ესტორნური კრონი"
-3. `GetCurrencyChangeAsync`  - 	აბრუნებს ვალუტის ცვლილების მნიშვნელობას, მაგ. "-0.0121"
-4. `GetCurrencyRateAsync` - 1 - თუ გაიზარდა; -1 - თუ დაიკლო, 0 - თუ იგივე დარჩა
-5. `GetDateAsync` - აბრუნებს კურსების შესაბამის თარიღს
+1. `GetCurrencyAsync` - Returns currency exchange rates compared to GEL
+2. `GetCurrencyDescriptionAsync` - Returns currency description. ex : "10 ესტორნური კრონი"
+3. `GetCurrencyChangeAsync`  - 	Return amount of currency rate change. ex : "-0.0121"
+4. `GetCurrencyRateAsync` -  Returns currency rate change summary : 1 - increased , -1 - decreased , 0 - not changed
+5. `GetDateAsync` - Returns date for which currency rate is calculated.
 
 Create an NbgApiClient, you can surround the code with `using` block.
 
