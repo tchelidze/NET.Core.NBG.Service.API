@@ -16,22 +16,10 @@ National Bank of Georgia (NBG) currency service API wrapper for .NET Standart
 
 Create an NbgApiClient, you can surround the code with `using` block.
 
-```
-using (var nbpClient = new NbgApiClient())
-{
-   var getCurrencyResponse = await  nbpClient.GetCurrencyAsync(new GetCurrency.Request { Code = "USD" });
-   Console.WriteLine($"GetCurrencyAsync -> Code : USD Result : {getCurrencyResponse.Rate}");
+`using (var nbpClient = new NbgApiClient())`
 
-   var getCurrencyDescriptionResponse = await  nbpClient.GetCurrencyDescriptionAsync(new GetCurrencyDescription.Request { Code = "USD" });
-   Console.WriteLine($"GetCurrencyDescriptionAsync -> Code : USD Result : {getCurrencyDescriptionResponse.Description}");
+Invoke client's method and pass corresponding request object
 
-   var getCurrencyChangeResponse = await nbpClient.GetCurrencyChangeAsync(new GetCurrencyChange.Request { Code = "USD" });
-   Console.WriteLine($"GetCurrencyChangeAsync -> Code : USD Result : {getCurrencyChangeResponse.Change}");
+`var getCurrencyResponse = await  nbpClient.GetCurrencyAsync(new GetCurrency.Request { Code = "USD" });`
 
-   var getCurrencyRateResponse = await  nbpClient.GetCurrencyRateAsync(new GetCurrencyRate.Request { Code = "USD" });
-   Console.WriteLine($"GetCurrencyRateAsync -> Code : USD Result : {getCurrencyRateResponse.Rate}");
-   
-   var getDateResponse = await nbpClient.GetDateAsync(new GetDate.Request());
-   Console.WriteLine($"GetDateAsync -> Code : USD Result : {getDateResponse.Date}");
- }```
- 
+See usage of all client's method [here](https://github.com/tchelidze/NET.Core.NBG.Service.API/blob/master/NET.Core.NBG.Service.API.Example/Program.cs)
