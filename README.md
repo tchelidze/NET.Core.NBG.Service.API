@@ -15,11 +15,13 @@ National Bank of Georgia (NBG) currency service API wrapper for .NET Standart
 5. `GetDateAsync` - Returns date for which currency rate is calculated.
 
 Create an NbgApiClient, you can surround the code with `using` block.
-
-`using (var nbpClient = new NbgApiClient())`
+```C#
+using (var nbpClient = new NbgApiClient())
+```
 
 Invoke client's method and pass corresponding request object
-
-`var getCurrencyResponse = await nbpClient.GetCurrencyAsync(new GetCurrency.Request { Code = CurrencyCode.USD });`
+```C#
+var getCurrencyResponse = await nbpClient.GetCurrencyAsync(new GetCurrency.Request { Code = CurrencyCode.USD });
+```
 
 See usage of all client's method [here](https://github.com/tchelidze/NET.Core.NBG.Service.API/blob/master/NET.Core.NBG.Service.API.Example/Program.cs)
