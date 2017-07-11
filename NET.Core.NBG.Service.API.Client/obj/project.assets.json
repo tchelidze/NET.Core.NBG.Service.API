@@ -4057,7 +4057,7 @@
     "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\User\\Documents\\Visual Studio 2017\\Projects\\NET.Core.NBG.Service.API\\NET.Core.NBG.Service.API.Client\\NET.Core.NBG.Service.API.Client.csproj",
       "projectName": "NET.Core.NBG.Service.API.Client",

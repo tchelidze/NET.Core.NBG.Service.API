@@ -2310,7 +2310,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "NET.Core.NBG.Service.API.Client/1.0.0": {
+      "NET.Core.NBG.Service.API.Client/1.1.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
@@ -7177,7 +7177,7 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "NET.Core.NBG.Service.API.Client/1.0.0": {
+    "NET.Core.NBG.Service.API.Client/1.1.0": {
       "type": "project",
       "path": "../NET.Core.NBG.Service.API.Client/NET.Core.NBG.Service.API.Client.csproj",
       "msbuildProject": "../NET.Core.NBG.Service.API.Client/NET.Core.NBG.Service.API.Client.csproj"
@@ -7186,7 +7186,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
       "Microsoft.NETCore.App >= 1.1.2",
-      "NET.Core.NBG.Service.API.Client >= 1.0.0",
+      "NET.Core.NBG.Service.API.Client >= 1.1.0",
       "SimpleSOAPClient >= 2.0.0-rc03"
     ]
   },

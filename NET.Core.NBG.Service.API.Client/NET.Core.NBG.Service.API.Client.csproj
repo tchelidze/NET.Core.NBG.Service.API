@@ -8,6 +8,7 @@
     <StartupObject />
     <Description>National Bank of Georgia (NBG) currency service API wrapper for .NET Core</Description>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
