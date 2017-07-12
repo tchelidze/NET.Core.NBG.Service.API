@@ -1,7 +1,7 @@
 # NET.Core.NBG.Service.API
 National Bank of Georgia (NBG) currency service API wrapper for .NET Standart
 
-## [NuGet](https://www.nuget.org/packages/NET.Core.NBG.Service.API.Client/1.0.0)
+## [NuGet](https://www.nuget.org/packages/NET.Core.NBG.Service.API.Client/1.1.0)
 
 `PM> Install-Package NET.Core.NBG.Service.API.Client`   
 
