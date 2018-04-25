@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NET.Core.NBG.Service.API.Client\NET.Core.NBG.Service.API.Client.csproj" />
+    <ProjectReference Include="..\..\src\NET.Core.NBG.Service.API.Client\NET.Core.NBG.Service.API.Client.csproj" />
   </ItemGroup>
 
   <ItemGroup>
