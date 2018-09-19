@@ -24,7 +24,7 @@ Invoke client's method and pass corresponding request object
 var getCurrencyResponse = await nbpClient.GetCurrencyAsync(new GetCurrency.Request { Code = CurrencyCode.USD });
 ```
 
-See usage of all client's method [here](https://github.com/tchelidze/NET.Core.NBG.Service.API/blob/master/NET.Core.NBG.Service.API.Example/Program.cs)
+See usage of all client's method [here](https://github.com/tchelidze/NET.Core.NBG.Service.API/blob/master/samples/NET.Core.NBG.Service.API.Example/Program.cs)
 
 ## License
 
